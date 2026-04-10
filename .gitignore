@@ -15,7 +15,6 @@ __pycache__/*
 **more
 test*
 old*
-.ipynb*
 *.h5
 *.so
 
