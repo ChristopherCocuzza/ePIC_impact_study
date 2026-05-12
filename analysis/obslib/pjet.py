@@ -786,6 +786,9 @@ def plot_obs(wdir, kc, task = 1, plot_with_factor = False, style = 'best', dpi =
         del data[idx]['prediction-rep']
         del data[idx]['residuals-rep']
         del data[idx]['shift-rep']
+        if 'r-residuals' in data[idx]: del data[idx]['r-residuals']
+        if 'n-residuals' in data[idx]: del data[idx]['n-residuals']
+        if 'rres-rep' in data[idx]: del data[idx]['rres-rep']
         if (style == 'best') or (style == 'best_lines'):
             best_predictions = [predictions[i] for i in range(len(predictions)) if cluster[i] == best_cluster]
             data[idx]['thy'] = np.mean(best_predictions, axis = 0)
