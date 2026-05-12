@@ -112,11 +112,11 @@ pdf.plot_xf(wdir,Q2=10,mode=1)
 ##--heavy quark PDFs
 ##---------------------------------------------------------------
 
-pdf.gen_hq(wdir,Q2=mc2)
-pdf.gen_hq(wdir,Q2=mb2)
-pdf.gen_hq(wdir,Q2=100)
-pdf.plot_hq(wdir,Q2=100,mode=0)
-pdf.plot_hq(wdir,Q2=100,mode=1)
+#pdf.gen_hq(wdir,Q2=mc2)
+#pdf.gen_hq(wdir,Q2=mb2)
+#pdf.gen_hq(wdir,Q2=100)
+#pdf.plot_hq(wdir,Q2=100,mode=0)
+#pdf.plot_hq(wdir,Q2=100,mode=1)
 
 
 
