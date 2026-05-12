@@ -179,8 +179,10 @@ def plot_xf_main(wdir,Q2=None,mode=0,SETS={}):
       #--plot each replica
       if mode==0:
           for i in range(len(data['XF'][flav])):
-              thy ,= ax.plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
-              axL.      plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
+              #thy ,= ax.plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
+              #axL.      plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
+              thy ,= ax.plot(X,np.array(data['XF'][flav][i]),color='red',alpha=0.3,zorder=2)
+              axL.      plot(X,np.array(data['XF'][flav][i]),color='red',alpha=0.3,zorder=2)
     
       #--plot average and standard deviation
       if mode==1:
@@ -365,8 +367,8 @@ def plot_lowx(wdir,Q2=None,mode=0,SETS={}):
       if mode==0:
           for i in range(len(data['XF'][flav])):
               #--if plotting one step, use clusters
-              thy ,= ax.plot(X,np.array(data['XF'][flav][i])/X,color=cmap(scale[i]),alpha=0.3,zorder=2)
-              axL.      plot(X,np.array(data['XF'][flav][i])/X,color=cmap(scale[i]),alpha=0.3,zorder=2)
+              thy ,= ax.plot(X,np.array(data['XF'][flav][i])/X,color='red',alpha=0.3,zorder=2)
+              axL.      plot(X,np.array(data['XF'][flav][i])/X,color='red',alpha=0.3,zorder=2)
     
       #--plot average and standard deviation
       if mode==1:
@@ -553,8 +555,8 @@ def plot_asymmetry(wdir,Q2=None,mode=0,SETS={},reweight=None):
       #--plot each replica
       if mode==0:
           for i in range(len(data['XF'][flav])):
-              thy ,= ax.plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
-              axL.      plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
+              thy ,= ax.plot(X,np.array(data['XF'][flav][i]),color='red',alpha=0.3,zorder=2)
+              axL.      plot(X,np.array(data['XF'][flav][i]),color='red',alpha=0.3,zorder=2)
     
       #--plot average and standard deviation
       if mode==1:
@@ -705,8 +707,8 @@ def plot_s_asymmetry(wdir,Q2=None,mode=0,SETS={}):
       #--plot each replica
       if mode==0:
           for i in range(len(data['XF'][flav])):
-              thy ,= ax.plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
-              axL.      plot(X,np.array(data['XF'][flav][i]),color=cmap(scale[i]),alpha=0.3,zorder=2)
+              thy ,= ax.plot(X,np.array(data['XF'][flav][i]),color='red',alpha=0.3,zorder=2)
+              axL.      plot(X,np.array(data['XF'][flav][i]),color='red',alpha=0.3,zorder=2)
     
       #--plot average and standard deviation
       if mode==1:
