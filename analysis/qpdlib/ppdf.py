@@ -412,7 +412,7 @@ def plot_lowx(wdir,Q2=None,mode=0,SETS={}):
         axs[i+1].tick_params(axis='both', which='major', top=True, direction='in',labelsize=30,pad=10,length=10)
         axs[i+1].tick_params(axis='both', which='minor', top=True, direction='in',labelsize=30,pad=10,length=5)
         axs[i+1].set_xticks([0.0001,0.001,0.01,0.1,1.0])
-        axs[i+1].set_xticklabels([r'$10^{-4}$',r'$10^{-3}$',r'$10^{-2}$',r'$10^{-1}$'])
+        axs[i+1].set_xticklabels([r'$10^{-4}$',r'$10^{-3}$',r'$10^{-2}$',r'$10^{-1}$',r'$1$'])
 
         axLs[i+1].set_xlim(0.99,1.0)
 
