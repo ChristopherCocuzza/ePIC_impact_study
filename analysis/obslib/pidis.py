@@ -1982,6 +1982,9 @@ def plot_obs(wdir, kc):
         del data[idx]['residuals-rep']
         del data[idx]['shift-rep']
         del data[idx]['rres-rep']
+        if 'r-residuals' in data[idx]: del data[idx]['r-residuals']
+        if 'n-residuals' in data[idx]: del data[idx]['n-residuals']
+        if 'rres-rep' in data[idx]: del data[idx]['rres-rep']
         for ic in range(kc.nc[istep]):
             predictions_ic = [predictions[i] for i in range(len(predictions)) if cluster[i] == ic]
             data[idx]['thy-%d' % ic] = np.mean(predictions_ic, axis = 0)
