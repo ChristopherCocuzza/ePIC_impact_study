@@ -3,7 +3,8 @@ import os,sys
 #--set lhapdf data path
 version = int(sys.version[0])
 os.environ["LHAPDF_DATA_PATH"] = '/work/JAM/ccocuzza/lhapdf/python%s/sets'%version
-sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+#sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 import kmeanconf as kc
 
 #--from corelib
