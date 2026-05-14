@@ -5,7 +5,7 @@ conf={}
 conf['bootstrap']=True
 conf['flat par']=True
 
-conf['grid path'] = '/ceph24/JAM/share/fitpack_grids'
+conf['grid path'] = '/work/JAM/share/fitpack_grids'
 conf['dis_version'] = 1
 
 #--setups for DGLAP
