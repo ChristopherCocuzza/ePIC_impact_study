@@ -129,7 +129,7 @@ def plot_pstf(wdir,Q2=None,mode=0,TAR=['p','n','d','h'],STF=['g1','g2']):
               data=load(filename)
 
           X    = data['X']
-          data = data['XF'] 
+          data = data['STF'] 
           mean = np.mean(data,axis=0)
           std  = np.std (data,axis=0)
 
