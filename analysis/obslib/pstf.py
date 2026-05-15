@@ -119,7 +119,7 @@ def plot_pstf(wdir,Q2=None,mode=0,TAR=['p','n','d','h'],STF=['g1','g2']):
   hand = {}
   for tar in TAR:
       for stf in STF:
-          filename ='%s/data/pstf-%s-%s-Q2=%3.5f.dat'%(wdir,tar,stf,Q2)
+          filename ='%s/data/pstf-%s-%s-Q2=%3.5f.dat'%(wdir,stf,tar,Q2)
           #--load data if it exists
           try:
               data=load(filename)
